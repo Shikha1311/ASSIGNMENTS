@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="customer" class="Customer">
+	<constructor-arg index="0" value="1" />
+	<constructor-arg index="1" value="Shikha"/>
+	<constructor-arg index="2" value="+919340499400"/>
+	<constructor-arg index="3" ref="address"/>
+</bean>
+<bean id="address" class="Address">
+	<constructor-arg index="0" value="Street No. 206"/>
+	<constructor-arg index="1" value="Shahdol"/>
+	<constructor-arg index="2" value="M.P."/>
+	<constructor-arg index="3" value="484001"/>
+	<constructor-arg index="4" value="India"/>
+
+</bean>
+</beans>
